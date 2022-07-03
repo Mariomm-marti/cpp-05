@@ -33,7 +33,8 @@ public:
 	size_t const		&getGrade(void) const;
 	void				increaseGrade(void);
 	void				decreaseGrade(void);
-	void				signForm(Form const &form) const;
+	void				signForm(Form &form);
+	void				executeForm(Form const &form) const;
 };
 
 std::ostream	&operator<<(std::ostream &out, Bureaucrat const &b);
